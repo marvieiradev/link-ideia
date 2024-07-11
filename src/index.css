@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
 .btn:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     animation: ease;
 }
 
@@ -19,6 +24,7 @@
 .glow:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    /*background: linear-gradient(45deg, #ff0000, #800000, #B22222, #8B0000, #ff0000, #DC143C, #800000, #B22222, #ff0000);*/
     position: absolute;
     top: -2px;
     left: -2px;
@@ -41,6 +47,10 @@
     left: 0;
     top: 0;
     border-radius: 1.5rem
+}
+
+.glow:hover:after {
+    background: #040404;
 }
 
 @keyframes glowing {
