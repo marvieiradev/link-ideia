@@ -10,7 +10,7 @@ const Modal = ({ visible, onClose }) => {
 
                 <div className="flex flex-row items-center justify-center relative">
                     <div className="absolute right-1 top-1 w-[14px] md:w-[20px]" onClick={onClose}>
-                        <img src="close.svg" alt="" />
+                        <img src="./close.svg" alt="" />
                     </div>
                     <div>
                         <p className="uppercase text-black-700 text-xl font-bold text-center pt-3 pb-3">NOSSO ENDEREÇO</p>
